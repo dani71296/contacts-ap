@@ -1,6 +1,4 @@
 const dns = require('dns');
-
-// Fuerza a Node.js a usar los DNS públicos de Google
 dns.setServers(['8.8.8.8', '8.8.4.4']);
 
 const { MongoClient } = require('mongodb');

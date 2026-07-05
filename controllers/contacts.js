@@ -1,7 +1,6 @@
 const mongodb = require('../db/connect');
 const ObjectId = require('mongodb').ObjectId;
 
-// Obtener todos los contactos de la base de datos
 const getAll = async (req, res) => {
     try {
         const result = await mongodb.getDb().db('cse341').collection('contacts').find();
@@ -14,7 +13,6 @@ const getAll = async (req, res) => {
     }
 };
 
-// Obtener un solo contacto por su ID (_id)
 const getSingle = async (req, res) => {
     try {
         const userId = new ObjectId(req.params.id);
