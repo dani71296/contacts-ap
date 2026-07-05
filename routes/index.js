@@ -3,7 +3,7 @@ const router = express.Router();
 
 router.use('/contacts', require('./contacts'));
 router.get('/', (req, res) => {
-    res.send('Contacts API funcionando en Render 🚀');
+    res.send('Contacts API Working on Render 🚀');
 });
 
 module.exports = router;
