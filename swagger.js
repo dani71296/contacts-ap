@@ -5,11 +5,8 @@ const doc = {
         title: 'Contacts API',
         description: 'Contacts API for W02 Project Part 2'
     },
-    // Si estás en Render, usará tu URL pública; si no, usa localhost
-    host: process.env.RENDER_EXTERNAL_URL
-        ? process.env.RENDER_EXTERNAL_URL.replace(/^https?:\/\//, '')
-        : 'localhost:8080',
-    schemes: process.env.RENDER_EXTERNAL_URL ? ['https'] : ['http']
+    host: '', // Lo dejamos vacío aquí para configurarlo en vivo
+    schemes: [] // Lo dejamos vacío aquí también
 };
 
 const outputFile = './swagger.json';
