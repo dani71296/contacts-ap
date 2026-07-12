@@ -5,12 +5,11 @@ const doc = {
         title: 'Contacts API',
         description: 'Contacts API for W02 Project Part 2'
     },
-    host: '', // Lo dejamos vacío aquí para configurarlo en vivo
-    schemes: [] // Lo dejamos vacío aquí también
+    host: 'localhost:8080', 
+    schemes: ['http']       
 };
 
 const outputFile = './swagger.json';
-const endpointsFiles = ['./routes/index.js']; // Apunta a tu enrutador principal
+const endpointsFiles = ['./routes/index.js'];
 
-// Genera el json y arranca el server (opcional)
 swaggerAutogen(outputFile, endpointsFiles, doc);

@@ -5,20 +5,12 @@
     "description": "Contacts API for W02 Project Part 2",
     "version": "1.0.0"
   },
-  "host": "",
+  "host": "localhost:8080",
   "basePath": "/",
-  "schemes": [],
+  "schemes": [
+    "http"
+  ],
   "paths": {
-    "/api-docs": {
-      "get": {
-        "description": "",
-        "responses": {
-          "default": {
-            "description": ""
-          }
-        }
-      }
-    },
     "/": {
       "get": {
         "description": "",
